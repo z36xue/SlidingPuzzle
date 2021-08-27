@@ -1,0 +1,54 @@
+.board {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+}
+
+.tile {
+    color: aqua;
+    font-size: 36px;
+    border: 1px solid black;
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+.tile:hover {
+    background-color: greenyellow;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.options button:hover {
+    color: yellow;
+    background-color: teal;
+}
+
+.tile_up {
+    transform: translateY(-200px);
+  }
+  
+.tile_down {
+    transform: translateY(200px);
+}
+
+.tile_right {
+    transform: translateX(200px);
+}
+  
+.tile_left {
+    transform: translateX(-200px);
+}
